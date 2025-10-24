@@ -30,8 +30,10 @@ This repository hosts the static marketing site for Bazen Woodworking, built wit
 
 ## Content updates
 
-- **Formspree:** Replace `YOUR_FORM_ID` in `_includes/contact-form.html` with the production Formspree form ID.
-- **Images:** Swap the placeholder images in `assets/img/` with final photography. Keep filenames consistent or update the references across the content pages.
+- **Formspree:** The production endpoint is already wired in `_includes/contact-form.html` — no updates needed unless the ID changes.
+- **Images:** Swap photography inside `assets/img/` (hero, gallery, process, and about-page image) with your preferred shots. Update filenames or references in the HTML pages if you change them.
 - **SEO:** Update page descriptions or Open Graph images via front matter (`description` and `image`).
+
+All content pages (`index.html`, `latest-projects.html`, `about-steve.html`, `contact.html`, and `faq.html`) are straight HTML with Tailwind utility classes so you can edit copy directly without Markdown.
 
 All content pages live at the root level to keep clean permalinks required by the existing Wix site.

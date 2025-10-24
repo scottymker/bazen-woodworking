@@ -6,3 +6,6 @@ _site/
 vendor/
 Gemfile.lock
 node_modules/
+.DS_Store
+assets/img/Site\ Files/
+assets/img/Site\ Files.zip
