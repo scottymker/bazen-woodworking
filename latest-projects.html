@@ -4,59 +4,34 @@ description: Browse recent custom cabinetry and built-in projects completed by B
 permalink: /latest-projects/
 ---
 
-<section class="mx-auto max-w-content px-6 py-16">
-  <header class="max-w-2xl">
+<section class="mx-auto max-w-content px-6 py-20">
+  <header class="max-w-3xl">
     <h1 class="text-3xl font-semibold text-brand-800 md:text-4xl">Latest Projects</h1>
     <p class="mt-4 text-base text-brand-600">
-      Every space we build is tailored to the homeowner. Explore a sampling of recent kitchens, mudrooms, and custom storage solutions crafted in our Corsica shop and installed across southeastern South Dakota.
+      Recent work from the Corsica shop—captured after install to spotlight the blend of clean lines, warm finishes, and hidden functionality that define Bazen cabinetry.
     </p>
   </header>
 
-  <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-    <figure class="group overflow-hidden rounded-3xl bg-brand-50 shadow-lg ring-1 ring-brand-100 transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
-      <img src="{{ base_path }}/assets/img/project-kitchen.jpg" alt="Warm-stained kitchen cabinetry with oversized island and pendant lights" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
-      <figcaption class="p-4 text-sm text-brand-600">
-        Walnut kitchen with inset doors, appliance panels, and tailored storage for cooking essentials.
-      </figcaption>
-    </figure>
-    <figure class="group overflow-hidden rounded-3xl bg-brand-50 shadow-lg ring-1 ring-brand-100 transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
-      <img src="{{ base_path }}/assets/img/project-mudroom.jpg" alt="Custom mudroom lockers with open storage and bench seating" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
-      <figcaption class="p-4 text-sm text-brand-600">
-        Family mudroom lockers built for daily traffic with integrated bench seating and drop zones.
-      </figcaption>
-    </figure>
-    <figure class="group overflow-hidden rounded-3xl bg-brand-50 shadow-lg ring-1 ring-brand-100 transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
-      <img src="{{ base_path }}/assets/img/project-bath.jpg" alt="Bright bathroom vanity with marble counters and sconce lighting" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
-      <figcaption class="p-4 text-sm text-brand-600">
-        Spa-inspired bathroom with custom vanity, linen tower, and concealed laundry pull-outs.
-      </figcaption>
-    </figure>
-    <figure class="group overflow-hidden rounded-3xl bg-brand-50 shadow-lg ring-1 ring-brand-100 transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
-      <img src="{{ base_path }}/assets/img/project-fireplace.jpg" alt="Built-in living room cabinetry framing a fireplace with shelving" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
-      <figcaption class="p-4 text-sm text-brand-600">
-        Living room built-in with fireplace surround, integrated AV storage, and floating shelves.
-      </figcaption>
-    </figure>
-    <figure class="group overflow-hidden rounded-3xl bg-brand-50 shadow-lg ring-1 ring-brand-100 transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
-      <img src="{{ base_path }}/assets/img/project-office.jpg" alt="Custom home office cabinetry with open shelving and lower drawers" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
-      <figcaption class="p-4 text-sm text-brand-600">
-        Home office system featuring file storage, adjustable shelving, and dedicated meeting space.
-      </figcaption>
-    </figure>
-    <figure class="group overflow-hidden rounded-3xl bg-brand-50 shadow-lg ring-1 ring-brand-100 transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
-      <img src="{{ base_path }}/assets/img/project-laundry.jpg" alt="Laundry room cabinetry with folding counter and tall storage" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
-      <figcaption class="p-4 text-sm text-brand-600">
-        Laundry room cabinetry with hanging rail, tall storage, and durable work surfaces.
-      </figcaption>
-    </figure>
+  <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {% assign gallery = "project-kitchen.jpg|Walnut kitchen|Walnut kitchen with inset doors, appliance panels, and tailored storage|Warm-stained kitchen cabinetry with oversized island and pendant lights,project-mudroom.jpg|Mudroom lockers|Daily-use lockers with bench seating and hidden compartments|Custom mudroom lockers with open storage and bench seating,project-bath.jpg|Bath & wellness|Spa-inspired vanity with linen tower and hidden laundry|Bright bathroom vanity with marble counters and sconce lighting,project-fireplace.jpg|Living room built-ins|Fireplace surround with floating shelving and concealed AV storage|Built-in living room cabinetry framing a fireplace with shelving,project-office.jpg|Workspaces|Home office system balancing display and storage|Custom home office cabinetry with open shelving and lower drawers,project-laundry.jpg|Utility spaces|Laundry cabinetry with tall storage, folding counters, and drying rail|Laundry room cabinetry with folding counter and tall storage" | split: ',' %}
+    {% for item in gallery %}
+      {% assign parts = item | split: '|' %}
+      <figure class="group relative overflow-hidden rounded-3xl bg-brand-900/10">
+        <img src="{{ base_path }}/assets/img/{{ parts[0] }}" alt="{{ parts[3] }}" class="h-72 w-full object-cover transition duration-500 group-hover:scale-105">
+        <figcaption class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-brand-900/75 via-brand-900/10 to-transparent p-6 text-brand-50">
+          <h2 class="text-lg font-semibold">{{ parts[1] }}</h2>
+          <p class="mt-2 text-sm text-brand-100/85">{{ parts[2] }}</p>
+        </figcaption>
+      </figure>
+    {% endfor %}
   </div>
 
-  <div class="mt-16 rounded-3xl bg-brand-900 px-8 py-10 text-brand-50 shadow-xl">
+  <div class="mt-16 rounded-3xl bg-gradient-to-r from-brand-900 via-brand-800 to-brand-700 px-8 py-10 text-brand-50">
     <h2 class="text-2xl font-semibold">Have a project in mind?</h2>
-    <p class="mt-3 text-sm text-brand-100/90">
-      We take on a limited number of projects each month to keep craftsmanship first. Share your ideas and we’ll follow up with next steps and a site visit.
+    <p class="mt-3 text-sm text-brand-100/85">
+      We take on a limited number of builds each month to keep craftsmanship first. Share a few details and we’ll map out next steps together.
     </p>
-    <a href="{{ base_path }}/contact/#contact-form" class="mt-6 inline-flex items-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand-800 shadow-lg transition hover:bg-brand-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-200">
+    <a href="{{ base_path }}/contact/#contact-form" class="mt-6 inline-flex items-center rounded-full bg-white/90 px-5 py-2.5 text-sm font-semibold text-brand-800 transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-200">
       Request a Quote
     </a>
   </div>

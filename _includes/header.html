@@ -1,17 +1,17 @@
-<header class="bg-white/95 backdrop-blur border-b border-brand-100">
+<header class="sticky top-0 z-50 bg-gradient-to-b from-white/95 via-white/80 to-transparent backdrop-blur">
   <div class="mx-auto flex max-w-content items-center justify-between px-6 py-4">
-    <a href="{{ base_path }}/" class="flex items-center space-x-3 text-brand-800 hover:text-brand-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300">
+    <a href="{{ base_path }}/" class="flex items-center space-x-3 text-brand-800 transition hover:text-brand-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300/40">
       <img src="{{ base_path }}/assets/img/logo.png" alt="Bazen Woodworking logo" class="h-10 w-auto">
-      <span class="text-lg font-semibold uppercase tracking-[0.2em]">Bazen Woodworking</span>
+      <span class="text-lg font-semibold tracking-[0.25em] text-brand-700">Bazen Woodworking</span>
     </a>
-    <nav aria-label="Primary" class="flex items-center space-x-6 text-sm font-semibold text-brand-700">
-      <a href="{{ base_path }}/" class="hover:text-brand-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300">Home</a>
-      <a href="{{ base_path }}/latest-projects/" class="hover:text-brand-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300">Latest Projects</a>
-      <a href="{{ base_path }}/about-steve/" class="hover:text-brand-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300">About Steve</a>
-      <a href="{{ base_path }}/contact/" class="hover:text-brand-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300">Contact</a>
+    <nav aria-label="Primary" class="flex items-center space-x-6 text-sm font-medium text-brand-700">
+      <a href="{{ base_path }}/" class="transition hover:text-brand-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300/40">Home</a>
+      <a href="{{ base_path }}/latest-projects/" class="transition hover:text-brand-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300/40">Latest Projects</a>
+      <a href="{{ base_path }}/about-steve/" class="transition hover:text-brand-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300/40">About Steve</a>
+      <a href="{{ base_path }}/contact/" class="transition hover:text-brand-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300/40">Contact</a>
     </nav>
-    <a href="tel:{{ site.social.phone }}" class="hidden rounded-full border border-brand-400 px-4 py-2 text-sm font-semibold text-brand-700 shadow-sm transition hover:bg-brand-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300 md:inline-block">
-      {{ site.social.phone_display }}
+    <a href="tel:{{ site.social.phone }}" class="hidden items-center gap-2 text-sm font-semibold text-brand-700 transition hover:text-brand-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300/40 md:inline-flex">
+      <span>{{ site.social.phone_display }}</span>
     </a>
   </div>
 </header>
