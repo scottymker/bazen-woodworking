@@ -1,0 +1,39 @@
+<footer class="bg-slate-900 text-slate-200">
+  <div class="mx-auto grid max-w-content gap-8 px-6 py-12 md:grid-cols-3">
+    <div>
+      <h2 class="text-sm font-semibold uppercase tracking-wide text-slate-400">Bazen Woodworking</h2>
+      <p class="mt-3 text-base font-medium text-white">
+        Custom cabinets, crafted locally for kitchens, mudrooms, and every unique space in your home.
+      </p>
+      <div class="mt-4 space-y-1 text-sm">
+        <p>{{ site.social.address }}</p>
+        <p><a class="hover:text-brand-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400" href="tel:{{ site.social.phone }}">{{ site.social.phone_display }}</a></p>
+        <p><a class="hover:text-brand-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400" href="mailto:{{ site.social.email }}">{{ site.social.email }}</a></p>
+      </div>
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold uppercase tracking-wide text-slate-400">Showroom Hours</h2>
+      <ul class="mt-3 space-y-1 text-sm">
+        <li>Mon–Thu: 8am – 5pm</li>
+        <li>Fri: 8am – 3pm</li>
+        <li>Evenings &amp; Saturdays by appointment</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold uppercase tracking-wide text-slate-400">Quick Links</h2>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li><a class="hover:text-brand-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400" href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a class="hover:text-brand-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400" href="{{ '/latest-projects/' | relative_url }}">Latest Projects</a></li>
+        <li><a class="hover:text-brand-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400" href="{{ '/about-steve/' | relative_url }}">About Steve</a></li>
+        <li><a class="hover:text-brand-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400" href="{{ '/contact/' | relative_url }}">Contact</a></li>
+        <li><a class="hover:text-brand-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400" href="{{ '/faq/' | relative_url }}">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-slate-800">
+    <div class="mx-auto flex max-w-content flex-col items-center justify-between gap-2 px-6 py-4 text-xs text-slate-500 md:flex-row">
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+      <p>Crafted for Corsica and the surrounding communities.</p>
+    </div>
+  </div>
+</footer>

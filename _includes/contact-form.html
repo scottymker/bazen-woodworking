@@ -1,0 +1,57 @@
+<section id="contact-form" class="mx-auto max-w-content rounded-2xl bg-white px-6 py-10 shadow-lg ring-1 ring-slate-200">
+  <div class="grid gap-10 lg:grid-cols-2">
+    <div>
+      <h2 class="text-2xl font-semibold text-slate-900">Let’s talk about your project</h2>
+      <p class="mt-2 text-sm text-slate-600">
+        Share a few details and we’ll follow up within two business days. Prefer email? Reach out at
+        <a href="mailto:bazensteve@gmail.com" class="font-medium text-brand-600 underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400">bazensteve@gmail.com</a>.
+      </p>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="mt-6 space-y-4">
+        <div class="grid gap-4 md:grid-cols-2">
+          <label class="block text-sm font-medium text-slate-700">
+            <span class="mb-1 block">Name</span>
+            <input type="text" name="name" class="w-full rounded-md border border-slate-300 px-3 py-2 text-slate-900 shadow-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-400" autocomplete="name">
+          </label>
+          <label class="block text-sm font-medium text-slate-700">
+            <span class="mb-1 block">Email <span class="text-red-600">*</span></span>
+            <input type="email" name="email" required class="w-full rounded-md border border-slate-300 px-3 py-2 text-slate-900 shadow-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-400" autocomplete="email">
+          </label>
+        </div>
+        <label class="block text-sm font-medium text-slate-700">
+          <span class="mb-1 block">Phone</span>
+          <input type="tel" name="phone" class="w-full rounded-md border border-slate-300 px-3 py-2 text-slate-900 shadow-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-400" autocomplete="tel">
+        </label>
+        <label class="block text-sm font-medium text-slate-700">
+          <span class="mb-1 block">How can we help? <span class="text-red-600">*</span></span>
+          <textarea name="message" rows="4" required class="w-full rounded-md border border-slate-300 px-3 py-2 text-slate-900 shadow-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-400"></textarea>
+        </label>
+        <p class="text-xs text-slate-500">
+          By submitting, you agree we may contact you about scheduling, estimates, and project planning.
+        </p>
+        <button type="submit" class="inline-flex items-center rounded-md bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400">
+          Send message
+        </button>
+      </form>
+    </div>
+    <aside class="flex flex-col justify-between gap-6 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200">
+      <div>
+        <h3 class="text-lg font-semibold text-slate-900">Visit the shop</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          320 Industrial Ave<br>
+          Corsica, SD 57328
+        </p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-slate-900">Shop hours</h3>
+        <ul class="mt-2 space-y-1 text-sm text-slate-600">
+          <li>Mon–Thu: 8am – 5pm</li>
+          <li>Fri: 8am – 3pm</li>
+          <li>Evenings &amp; Saturdays by appointment</li>
+        </ul>
+      </div>
+      <a href="tel:+16055533304" class="inline-flex items-center justify-center rounded-md border border-brand-500 px-4 py-2 text-sm font-semibold text-brand-600 transition hover:bg-brand-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400">
+        Call (605) 553-3304
+      </a>
+    </aside>
+  </div>
+</section>

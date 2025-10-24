@@ -1,0 +1,18 @@
+title: Bazen Woodworking
+description: Custom cabinets crafted for homes across South Dakota.
+url: https://bazenwoodworkingllc.com
+baseurl: ""
+permalink: /:title/
+markdown: kramdown
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+      image: /assets/img/og-default.jpg
+social:
+  phone: "+16055533304"
+  phone_display: "(605) 553-3304"
+  email: bazensteve@gmail.com
+  address: "320 Industrial Ave, Corsica, SD 57328"
