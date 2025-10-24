@@ -9,7 +9,7 @@
 <meta property="og:type" content="{% if page.og_type %}{{ page.og_type }}{% else %}website{% endif %}">
 <meta property="og:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ site.url }}{{ site.baseurl }}{{ '/assets/img/og-default.jpg' }}{% endif %}">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}">
+<link rel="icon" href="{{ base_path }}/assets/img/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
